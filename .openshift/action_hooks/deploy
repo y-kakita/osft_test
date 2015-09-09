@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+HOME=$HOME/app-root/runtime
+
+NODE_V='v0.12.7'
+NODE_BIN=$HOME/node-$NODE_V-linux-x64/bin/node
+
+cd ~/
+
+if [ ! -e #NODE_BIN ]; then
+    wget https://nodejs.org/dist/$NODE_V/node-$NODE_V-linux-x64.tar.gz
+    tar zxvf node-$NODE_V-linux-x64.tar.gz
+    ./node-$NODE_V-linux-x64/bin/npm install bower
+fi
+
+export PATH=$HOME/node-$HOME_V-linux-x64/bin:$PATH
+cd ./repo
+../node_modules/.bin/bower install
