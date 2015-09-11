@@ -1,5 +1,5 @@
 <?php
-  echo "Hello change world 600   !!"; 
+  echo "Hello change world 700   !!"; 
   echo "kotiramokotiramo"; 
 ?>
 
